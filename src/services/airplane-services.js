@@ -6,6 +6,7 @@ async function createAirplane(data){
 
     try {
         const airplane = await airplaneRepository.create(data);
+        console.log("success response from airplane - service ", airplane)
         return airplane;
     }
     catch(err){

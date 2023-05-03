@@ -15,6 +15,7 @@ async function creatAirplane(req, res) {
              capacity:req.body.capacity 
             }
         )
+        console.log("success response from airplane-controller ", airplane)
 
       return res
                 .status(StatusCodes.CREATED)
@@ -38,6 +39,8 @@ async function creatAirplane(req, res) {
     }
     
 }
+
+
 
 module.exports = {
     creatAirplane

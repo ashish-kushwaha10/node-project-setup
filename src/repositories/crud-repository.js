@@ -8,6 +8,7 @@ class crudRepository{
     async create(data){
         try {
             const response = await this.model.create(data)
+            console.log("success response from crudRepository : plane created successfully",response)
             return response;
         } catch (error) {
             Logger.error("something went wrong in crud repository :creat")

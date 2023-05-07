@@ -58,7 +58,7 @@ npx sequelize db:create
 npx sequelize model:generate --name Airplane --attributes modelNumber:string,capacity:integer
 ```
 - Remember above command will NOT create the table right now. this will creat only model with named as "airplane" and migration file. it is just like adding a git file but Not commiting.
-- Whatever constraints we put in "model" folder, that will JS level constraints only, not the DB constraints
+- Whatever constraints we put in "model" folder, that will be JS level constraints only, not the DB constraints
 - the contraints in the "migration" folder will be the actual DB constraints.
 
 -`migration i.e. version of DB` -> this can create , alter and remove the data(tables) from DB.
